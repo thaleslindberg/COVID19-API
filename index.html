@@ -40,23 +40,23 @@
         </nav>
     </header>
 
-    <main class="py-5 mt-5">
+    <main class="py-5 mt-5 bg-light">
 
         <div class="col-3">
             <label>Search by State:</label>
             <input type="search" type="text"><br>
-            <button class="mt-2 btn btn-primary">Search</button>
+            <button class="mt-2 btn btn-info">Search</button>
         </div>
         <div class="col m-auto pt-5">
-            <h4 id="title" class="text-center">COVID-19 Cases</h4>
-            <table class="table table-striped w-auto mt-5 m-auto">
+            <h4 id="title" class="text-center">COVID-19 cases and deaths per states</h4>
+            <table class="table table-striped w-100 mt-5 m-auto">
                 <thead>
-                    <tr>
-                        <th id="state">Estados</th>
-                        <th id="cases">Casos</th>
-                        <th id="deaths">Mortes</th>
+                    <tr class="table-bordered table-info table-striped">
+                        <th scope="row" id="state">State</th>
+                        <th id="cases">Cases</th>
+                        <th class="bg-danger" id="deaths">Deaths</th>
                     </tr>
-                    <tbody id="state_table">
+                    <tbody class="table-bordered" id="state_table">
 
                     </tbody>
                 </thead>
@@ -77,25 +77,25 @@
                 <div class="col-md-6 mt-md-0 mt-3 mr-5">
 
                     <!-- Content -->
-                    <h5 class="text-uppercase">How dangerous is the virus?</h5>
+                    <h5 class="text-uppercase text-danger">How dangerous is the virus?</h5>
                     <p>There are three parameters to understand in order to assess the magnitude of the risk posed by
                         this novel coronavirus:</p>
 
                     <ul class="list-unstyled">
                         <li>
-                            <a href="https://www.worldometers.info/coronavirus/#repro" class="text-dark h6"
+                            <a href="https://www.worldometers.info/coronavirus/#repro" class="text-info h6"
                                 target="_blank">Transmission Rate (Ro)</a> - number of newly infected people from a
                             single case 1
                         </li>
                         <li>
                             <a href="https://www.worldometers.info/coronavirus/coronavirus-death-rate/"
-                                class="text-dark h6" target="_blank">Case Fatality Rate (CFR)</a> - percent of cases
+                                class="text-info h6" target="_blank">Case Fatality Rate (CFR)</a> - percent of cases
                             that result in death
                         </li>
                         <li>
                             Determine whether <a
                                 href="https://www.worldometers.info/coronavirus/coronavirus-incubation-period/#asy"
-                                class="text-dark h6" target="_blank">asymptomatic transmission</a> is possible
+                                class="text-info h6" target="_blank">asymptomatic transmission</a> is possible
                         </li>
                     </ul>
 
@@ -112,20 +112,20 @@
 
                     <ul class="list-unstyled">
                         <li>
-                            <a href="https://www.worldometers.info/coronavirus/" class="text-dark"
+                            <a href="https://www.worldometers.info/coronavirus/" class="text-info"
                                 target="_blank">Coronavirus Update</a>
                         </li>
                         <li>
-                            <a href="https://www.worldometers.info/coronavirus/worldwide-graphs/" class="text-dark"
+                            <a href="https://www.worldometers.info/coronavirus/worldwide-graphs/" class="text-info"
                                 target="_blank">Case statistics and graphs</a>
                         </li>
                         <li>
-                            <a href="https://www.worldometers.info/coronavirus/worldwide-graphs/" class="text-dark"
+                            <a href="https://www.worldometers.info/coronavirus/worldwide-graphs/" class="text-info"
                                 target="_blank">Death statistics and graphs</a>
                         </li>
                         <li>
                             <a href="https://www.worldometers.info/coronavirus/coronavirus-death-rate/"
-                                class="text-dark" target="_blank">Mortality Rate</a>
+                                class="text-info" target="_blank">Mortality Rate</a>
                         </li>
                     </ul>
 
@@ -143,7 +143,7 @@
 
         <!-- Copyright -->
         <div class="footer-copyright text-center py-3 bg-secondary">© 2020 Copyright:
-            <a class="text-light" href="http://thaleslindberg.github.io" target="_blank"> Thales Lindberg</a>
+            <a class="text-info" href="http://thaleslindberg.github.io" target="_blank"> Thales Lindberg</a>
         </div>
         <!-- Copyright -->
     </footer>
