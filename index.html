@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COVID-19 | Reports</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+
+<body>
+    <html lang="en" class="full-height">
+
+    <!--Main Navigation-->
+    <header>
+
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary scrolling-navbar">
+            <a class="navbar-brand" href="#"><strong>COVID-19 Cases in Brazil</strong></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only"></span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"
+                            href="https://www.hopkinsmedicine.org/health/conditions-and-diseases/coronavirus"
+                            target="_blank">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.worldometers.info/population/"
+                            target="_blank">Population</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="py-5 mt-5">
+
+        <div class="col-3">
+            <label>Search by State:</label>
+            <input type="search" type="text"><br>
+            <button class="mt-2 btn btn-primary">Search</button>
+        </div>
+        <div class="col m-auto pt-5">
+            <h4 id="title" class="text-center">COVID-19 Cases</h4>
+            <table class="table table-striped w-auto mt-5 m-auto">
+                <thead>
+                    <tr>
+                        <th id="state">Estados</th>
+                        <th id="cases">Casos</th>
+                        <th id="deaths">Mortes</th>
+                    </tr>
+                    <tbody id="state_table">
+
+                    </tbody>
+                </thead>
+            </table>
+        </div>
+    </main> 
+
+    <!-- Footer -->
+    <footer class="page-footer font-small blue mt-5 pt-4 bg-primary text-white">
+
+        <!-- Footer Links -->
+        <div class="container-fluid text-center text-md-left">
+
+            <!-- Grid row -->
+            <div class="row">
+
+                <!-- Grid column -->
+                <div class="col-md-6 mt-md-0 mt-3 mr-5">
+
+                    <!-- Content -->
+                    <h5 class="text-uppercase">How dangerous is the virus?</h5>
+                    <p>There are three parameters to understand in order to assess the magnitude of the risk posed by
+                        this novel coronavirus:</p>
+
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="https://www.worldometers.info/coronavirus/#repro" class="text-dark h6"
+                                target="_blank">Transmission Rate (Ro)</a> - number of newly infected people from a
+                            single case 1
+                        </li>
+                        <li>
+                            <a href="https://www.worldometers.info/coronavirus/coronavirus-death-rate/"
+                                class="text-dark h6" target="_blank">Case Fatality Rate (CFR)</a> - percent of cases
+                            that result in death
+                        </li>
+                        <li>
+                            Determine whether <a
+                                href="https://www.worldometers.info/coronavirus/coronavirus-incubation-period/#asy"
+                                class="text-dark h6" target="_blank">asymptomatic transmission</a> is possible
+                        </li>
+                    </ul>
+
+                </div>
+                <!-- Grid column -->
+
+                <hr class="clearfix w-100 d-md-none pb-3">
+
+                <!-- Grid column -->
+                <div class="col-md-4 mb-md-0 mb-3 ml-5">
+
+                    <!-- Links -->
+                    <h5 class="text-uppercase">Coronavirus Worldometer Sections:</h5>
+
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="https://www.worldometers.info/coronavirus/" class="text-dark"
+                                target="_blank">Coronavirus Update</a>
+                        </li>
+                        <li>
+                            <a href="https://www.worldometers.info/coronavirus/worldwide-graphs/" class="text-dark"
+                                target="_blank">Case statistics and graphs</a>
+                        </li>
+                        <li>
+                            <a href="https://www.worldometers.info/coronavirus/worldwide-graphs/" class="text-dark"
+                                target="_blank">Death statistics and graphs</a>
+                        </li>
+                        <li>
+                            <a href="https://www.worldometers.info/coronavirus/coronavirus-death-rate/"
+                                class="text-dark" target="_blank">Mortality Rate</a>
+                        </li>
+                    </ul>
+
+                </div>
+                <!-- Grid column -->
+
+
+                <!-- Grid column -->
+
+            </div>
+            <!-- Grid row -->
+
+        </div>
+        <!-- Footer Links -->
+
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3 bg-secondary">© 2020 Copyright:
+            <a class="text-light" href="http://thaleslindberg.github.io" target="_blank"> Thales Lindberg</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"></script>
+    <script src="/js/service.js"></script>
+</body>
+
+</html>
