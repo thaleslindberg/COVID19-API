@@ -43,26 +43,54 @@
     <main class="py-5 mt-5 bg-light">
 
         <div class="col-3">
-            <label>Search by State:</label>
-            <input type="search" type="text"><br>
-            <button class="mt-2 btn btn-info">Search</button>
+            <label class="h5"><strong>Search by state:</strong></label>
+            <h6 class="text-muted font-weight-normal">Example: Bahia</h6>
+            <input type="text" class="form-control" id="search"><br>
+            <button id="button_search" class="btn btn-primary" type="button">Search</button>
+
         </div>
+
+
         <div class="col m-auto pt-5">
             <h4 id="title" class="text-center">COVID-19 cases and deaths per states</h4>
-            <table class="table table-striped w-100 mt-5 m-auto">
-                <thead>
-                    <tr class="table-bordered table-info table-striped">
-                        <th scope="row" id="state">State</th>
-                        <th id="cases">Cases</th>
-                        <th class="bg-danger" id="deaths">Deaths</th>
-                    </tr>
+            <h6 class="text-center text-muted font-weight-normal">Updated Diarily, 22:28 GMT</h6>
+            <div id="home_content">
+                <table class="table table-striped w-100 mt-5 m-auto">
+                    <thead>
+                        <tr class="table-bordered table-info table-striped">
+                            <th scope="row" id="state">State</th>
+                            <th id="cases">Cases</th>
+                            <th class="bg-danger" id="deaths">Deaths</th>
+                        </tr>
                     <tbody class="table-bordered" id="state_table">
-
                     </tbody>
-                </thead>
-            </table>
+                    </thead>
+                </table>
+            </div>
+            <div id="state_content">
+                <table class="table table-striped w-100 mt-5 m-auto">
+                    <thead>
+                        <tr class="table-bordered table-info table-striped">
+                            <th scope="row" id="state">State</th>
+                            <th id="cases">Cases</th>
+                            <th class="bg-danger" id="deaths">Deaths</th>
+                        </tr>
+                    <tbody class="table-bordered" id="tabela">
+                    </tbody>
+                    </thead>
+                </table>
+            </div>
+
+
+
+
+
+
+
+
         </div>
-    </main> 
+
+    </main>
 
     <!-- Footer -->
     <footer class="page-footer font-small blue mt-5 pt-4 bg-primary text-white">
